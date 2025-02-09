@@ -1,0 +1,44 @@
+/* Global Styles */
+body {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  #app {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  h1 {
+    color: #2c3e50;
+  }
+  
+  button {
+    background-color: #42b983;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #3aa876;
+  }
+  
+  input[type="range"] {
+    width: 400px;
+    margin: 5px;
+  }
+  
+  canvas {
+    max-width: 400px;
+    margin: 10px auto;
+    display: block;
+  }
