@@ -1,20 +1,19 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import ButtonPage from '../views/ButtonPage.vue';
-import SurveyPage from '../views/NeutralSurveyPage.vue';
-import AnalysisPage from '../views/AnalysisPage.vue';
+// import Analysis from '../views/Analysis.vue';
+import LocalChatBot from '@/components/LocalChatBot.vue';
 
 Vue.use(VueRouter);
 
 const routes = [
-  { path: '/', component: ButtonPage },
-  { path: '/survey', component: SurveyPage },
-  { path: '/analysis', component: AnalysisPage },
+  { path: '/analysis', component: Analysis },
+  { path: '/chatbot', component: LocalChatBot }, // Add the ChatBot route
 ];
+
 
 const router = new VueRouter({
   mode: 'history',
-  routes,
+  routes, 
 });
 
-export default  router
+// export default router;

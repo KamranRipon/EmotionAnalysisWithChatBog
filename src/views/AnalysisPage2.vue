@@ -2,7 +2,11 @@
   <div>
     <h1>Analysis</h1>
     <canvas ref="pieChart"></canvas>
-    <button @click="goToHome" style="margin-top: 20px;">Home</button>
+    <!-- <button @click="goToHome" style="margin-top: 20px;">Home</button> -->
+    <div class="button-container">
+      <button @click="goToHome" class="quote-button">Exit</button>
+      <button @click="goToChatBot" class="chatbot-button">ChatBot</button>
+    </div>
   </div>
 </template>
 
@@ -10,6 +14,7 @@
 import Chart from 'chart.js/auto';
 
 export default {
+  
   mounted() {
     const surveyData = JSON.parse(localStorage.getItem('surveyData'));
     if (surveyData) {
@@ -35,6 +40,10 @@ export default {
     goToHome() {
       this.$router.push('/');
     },
+    goToChatBot() {
+      // Navigate to the Chat Bot page
+      this.$router.push('/chatbot');
+    },
   },
 };
 </script>
@@ -46,5 +55,14 @@ export default {
 
 .home-button {
   margin-top: 20px;
+}
+
+.chatbot-button {
+  background-color: #36a2eb;
+  color: white;
+}
+
+.chatbot-button:hover {
+  background-color: #2c8fd1;
 }
 </style>
