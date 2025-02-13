@@ -1,6 +1,6 @@
 <template>
     <div class="button-page">
-      <h1>Emotion Analysing App & Emotion-Sensitive Chatbot</h1>
+      <h1>Emotion Analyzing App & Emotion-Sensitive Chatbot</h1>
       <h2>What emotions have you experienced now/today?</h2>
       <p></p>
       <div class="button-container">

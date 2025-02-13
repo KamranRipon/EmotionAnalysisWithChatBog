@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 // import Analysis from '../views/Analysis.vue';
 import LocalChatBot from '@/components/LocalChatBot.vue';
 
+
 Vue.use(VueRouter);
 
 const routes = [
