@@ -5,7 +5,7 @@
     <div class="questions-container">
       <div v-for="(question, index) in questions" :key="index" class="question">
         <label>{{ question }}</label>
-        <input type="range" v-model="answers[index]" min="0" max="5" class="slider" />
+        <input type="range" v-model="answers[index]" min="0" max="5" step="1" class="slider" />
         <span class="slider-value">{{ answers[index] }}</span>
       </div>
     </div>
@@ -93,6 +93,25 @@ label {
 
 .slider {
   width: 100%;
+  -webkit-appearance: none;
+  background: #ddd;
+  border-radius: 5px;
+  height: 6px;
+  transition: all 0.2s ease-in-out;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #007bb5;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
 }
 
 .slider-value {

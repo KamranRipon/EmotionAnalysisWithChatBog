@@ -1,6 +1,6 @@
 import ButtonPage from './views/ButtonPage.vue';
 // import SurveyPage from './views/NeutralSurveyPage.vue';
-import AnalysisPage from './views/AnalysisPositiveEmotionPage.vue';
+// import AnalysisPage from './views/AnalysisPositiveEmotionPage.vue';
 import { createApp } from 'vue'
 import App from './App.vue'
 import { createRouter, createWebHistory } from 'vue-router'
@@ -24,15 +24,11 @@ const routes = [
   { path: '/AnalysisPositiveEmotionPage', component: AnalysisPositiveEmotionPage },
   { path: '/AnalysisNegativeEmotionPage', component: AnalysisNegativeEmotionPage },
   { path: '/AnalysisNeutralEmotionPage', component: AnalysisNeutralEmotionPage },
-
-
-
 ];
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
 })
-
 
 createApp(App).use(router).mount('#app')
